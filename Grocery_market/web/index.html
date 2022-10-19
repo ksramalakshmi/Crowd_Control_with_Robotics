@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            To-Buy list
+        </title>
+
+        <style>
+            body, html {
+                color: aliceblue;
+
+                padding-top: 10px;
+
+                font-family: Arial, Helvetica, sans-serif;
+                
+                background-image: url("bg.png");
+
+                height: 100%;
+
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            h1 {
+                text-align: center;
+                padding: 20px;
+            }
+            #items {
+                margin-left: 44%;
+            }
+
+            input {
+                width: 8%;
+                height: 60px;
+                font-size: large;
+            }
+
+            #list{
+                font-size: large;
+            }
+
+            
+        </style>
+        
+    </head>
+
+    <body>
+        <h1>Add items</h1>
+        <div style="text-align: center;">
+        <select id="select" style="width: 30%; height: 40px; font-size: large;">
+            <option value="Vegetables">Vegetables</option>
+            <option value="Fruits">Fruits</option>
+            <option value="Grains">Grains</option>
+            <option value="Canned Goods">Canned Goods</option>
+            <option value="Snacks">Snacks</option>
+            <option value="Beverages">Beverages</option>
+            <option value="Meat">Meat</option>
+            <option value="Dairy">Dairy</option>
+            <option value="Frozen">Frozen</option>
+            <option value="Household">Household</option>
+        </select>
+        </div>
+        <br><br>
+        <div style="text-align: center;">
+        <input type="button" value="ADD" id="addButton" name="add"/>
+        <input type="button" value="CLEAR" id="clearbutton" name="clear"/>
+        <input type="button" value="DONE" id="donebutton" name="done"/>
+        </div>
+        <script type="text/javascript" src="web.js"></script>
+        <script type="text/javascript" src="/eel.js"></script>
+        <br><br>
+        <h1>Items to be bought</h1>
+        <div id="items">
+        <ol id="list">
+        </ol>
+
+        </div>
+    </body>
+
+</html>
+
